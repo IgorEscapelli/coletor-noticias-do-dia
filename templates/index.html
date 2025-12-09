@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Coletor de Notícias do Dia</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    button { padding: 12px 18px; font-size: 16px; }
+    .msg { margin-top: 20px; color: green; }
+  </style>
+</head>
+<body>
+  <h1>Coletor de Notícias do Dia</h1>
+  <p>Clique no botão para buscar as notícias do dia dos sites configurados.</p>
+  <form action="/buscar" method="get">
+    <button type="submit">Buscar notícias do dia</button>
+  </form>
+
+  <p style="margin-top:10px;">
+    <a href="/download">Baixar último arquivo JSON</a>
+  </p>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="msg">
+        {% for m in messages %}
+          <p>{{ m }}</p>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+</body>
+</html>

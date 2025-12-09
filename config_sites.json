@@ -1,0 +1,33 @@
+[
+    {
+        "name": "O Municipio",
+        "type": "html",
+        "homepage": "https://www.omunicipio.jor.br/wordpress/",
+        "article_selector": "h2.entry-title a, h3.entry-title a, a.post-title, .entry-title a, .td-module-title a, .post-box a",
+        "link_attr": "href",
+        "date_selector": "time",
+        "date_is_meta": false
+    },
+    {
+        "name": "SãoJoãoSP Oficial",
+        "type": "html",
+        "homepage": "https://www.saojoao.sp.gov.br/noticias",
+        "article_selector": ".td-module-thumb a",
+        "link_attr": "href",
+        "date_selector": "time",
+        "date_is_meta": false
+    },
+    {
+        "name": "Fala Sao Joao (categoria)",
+        "homepage": "https://falasaojoao.com.br/category/noticias/",
+        "article_selector": ".td-block-span6 a, .td_module_16 a, .entry-title a",
+        "link_attr": "href",
+        "date_selector": "time",
+        "date_is_meta": false
+    },
+    {
+        "name": "G1 São Carlos",
+        "type": "rss",
+        "rss_url": "https://g1.globo.com/rss/g1/sp/sao-carlos-regiao/"
+    }
+]
